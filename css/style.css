@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
 /* NORMALIZADO */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #02475e;
 }
 
 
@@ -14,6 +19,10 @@
 
 /* MAIN */
 
+body{
+    background-image: url(/img/books.jpg);
+   }
+
 .links-items{
     display: block;
     max-width: 550px;
@@ -21,17 +30,22 @@
     margin-bottom: 5px;
     padding: 15px 20px;
     font-size: 0.95rem;
-    line-height: 1.5;
-    text-decoration: none;
+    line-height: 1.5;    
     transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
-.links__item .links__item--upcoming {
-    border-bottom: 3px solid #ffa093;
-    box-shadow: inset 0 -4px 0 #ffa093;
-    border-radius: 25px;
-    border: 2px solid #ffa093;
-    background-color: #ffa093;
-    }
+.links-items a{
+    text-decoration: none;
+    border: 1px solid #f3bda1;
+    padding: 10px 100px;
+    
+    color: #fff;
+    transition: 0.5s;
+}
+
+.links-items a:hover{
+    font-size: large;
+}
 
 
